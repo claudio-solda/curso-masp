@@ -1,4 +1,5 @@
 <!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Curso MASP</title>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1E3A8A"><link rel="apple-touch-icon" href="icon-192.png"><link rel="icon" href="icon-192.png">
 <style>
 :root{--bg:#F3F4F6;--cd:#fff;--tx:#1F2937;--mu:#6B7280;--p:#1E3A8A;--a:#2563EB;--o:#EA580C;--r:#DC2626;--bd:#E5E7EB;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111827;--cd:#1F2937;--tx:#F3F4F6;--mu:#9CA3AF;--p:#93C5FD;--a:#60A5FA;--o:#FB923C;--r:#F87171;--bd:#374151;color-scheme:dark}}
@@ -106,4 +107,5 @@ function tg(k){op=op===k?-1:k;R()}
 function dn(i){done[i]=!done[i];sv();R()}
 function an(i,j){qa[i]=j;R()}
 R();
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
 </script></body></html>
